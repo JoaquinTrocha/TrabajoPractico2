@@ -1,13 +1,14 @@
 from funciones_grupotrocha import *
 from PIL import Image
 import numpy as np
+from funciones_segun_feli.py import *
+
 
 #Main code
 
 
 #Ruta y verificacion de que sea una ruta
 ruta = input('Ingrese la ruta de la imagen a procesar:')
-imagen = verificacion_ruta(ruta)
 
 #Metodo a elegir
 metodo = input('Qué metodo de filtro desea usar (pixel o ascii):')
