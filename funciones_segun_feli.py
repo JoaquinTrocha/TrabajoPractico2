@@ -18,7 +18,7 @@ def convert_ruta(ruta: str) -> str | np.ndarray:
         return matriz_img
 
 
-#Funciones para Pixel art 
+#Funcion Pixel art 
 
 def pixel_art(matriz_img: np.ndarray, tam_bloque: int = 10, niveles: int = 4) -> np.ndarray:
     """
@@ -54,15 +54,7 @@ def pixel_art(matriz_img: np.ndarray, tam_bloque: int = 10, niveles: int = 4) ->
 
     return salida.astype(np.uint8)
 
-img = Image.open("/Users/felipe/Downloads/PHOTO-2026-03-24-10-30-09.jpg").convert("RGB")
-matriz = np.array(img)
-resultado = pixel_art(matriz, tam_bloque=20, niveles=4)
 
-import matplotlib.pyplot as plt
-plt.imshow(resultado)
-plt.axis("off")
-plt.show()
-
-#Funciones para Ascii
+#Funcion  Ascii
 
 

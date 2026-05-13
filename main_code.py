@@ -4,14 +4,19 @@ import numpy as np
 
 #Main code
 
-imagen = Image.open(input('Ingrese la ruta de la imagen a procesar:'))
-matriz_img = np.array(imagen)
 
+#Ruta y verificacion de que sea una ruta
+ruta = input('Ingrese la ruta de la imagen a procesar:')
+imagen = verificacion_ruta(ruta)
+
+#Metodo a elegir
 metodo = input('Qué metodo de filtro desea usar (pixel o ascii):')
 
+#Casos
 if metodo != 'pixel' or metodo != 'ascii':
     print('Ingrese un metodo de filtro correcto')
 
+#   Si elige pixel
 if metodo == 'pixel':
     tam_bloque = input('Seleccione el tamaño del bloque (default=10):')
     nivel_color = input('Seleccione la cantidad de niveles de color (default=4):')
@@ -26,8 +31,9 @@ if metodo == 'ascii':
     else:
         int(ancho)
     ascii_art(matriz_img)
+
     def guardar_ascii_art(ascii_art: str, ruta_salida: str):
-    with open(imagen, 'w') as f:
-        f.write(ascii_art)
+        with open(imagen, 'w') as f:
+            f.write(ascii_art)
 
 

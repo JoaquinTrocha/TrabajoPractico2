@@ -7,7 +7,7 @@ def pixel_art(matriz_img, tam_bloque, ):
         for j in i:
             pixel = matriz_img[i][j]
             
-    bloque = 
+   pass
 
     
 
