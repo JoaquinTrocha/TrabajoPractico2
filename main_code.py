@@ -1,9 +1,10 @@
 from PIL import Image
 import numpy as np
 from funciones_metodos import *
+from ascii_art import *
+from pixel_art import *
 
-
-#Main code
+#Main code   
 
 
 #Ruta y verificacion de que sea una ruta
@@ -49,9 +50,9 @@ if metodo == 'pixel':
         niveles = int(niveles)
 
     nombre_archivo = input("Ingrese un nombre para el archivo de salida:")
-    ruta_guardado = "out/" + nombre_archivo + ".png"
+    ruta_guardado = "Imagenes_resultados/" + nombre_archivo + ".png"
     (Image.fromarray(pixel_art(matriz_img, tam_bloque, niveles))).save(ruta_guardado)
-    
+
 #   Si elige ascii:
 if metodo == 'ascii':
 
@@ -68,7 +69,7 @@ if metodo == 'ascii':
         ancho_nuevo = int(ancho_nuevo)
     
     nombre_archivo = input("Ingrese un nombre para el archivo de salida:")
-    ruta_guardado = "out/" + nombre_archivo + ".txt"
+    ruta_guardado = "Imagenes_resultados/" + nombre_archivo + ".txt"
     guardar_ascii_art(ascii_art(ruta, ancho_nuevo), ruta_guardado)
             
 
