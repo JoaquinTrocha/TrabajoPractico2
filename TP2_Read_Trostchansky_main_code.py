@@ -1,10 +1,10 @@
 from PIL import Image
 import numpy as np
-from funciones_metodos import *
-from ascii_art import *
-from pixel_art import *
+from TP2_Read_Trostchansky_funciones_metodos import *
+from TP2_Read_Trostchansky_ascii_art import *
+from TP2_Read_Trostchansky_pixel_art import *
 
-#Main code   
+#Main code
 
 
 #Ruta y verificacion de que sea una ruta
